@@ -12,6 +12,7 @@ public class Ring : MonoBehaviour
     public Pole currentPole;
     public float ringSize;
     public Vector3 position;
+    public MoveCounter counter;
 
     void Awake()
     {
@@ -37,14 +38,17 @@ public class Ring : MonoBehaviour
             if (mousePos.x <= -2.5f && poleL.CheckSize(this))
             {
                 transform.position = SetRing();
+                counter.AddMove();
             }
             else if (mousePos.x >= 2.5f && poleR.CheckSize(this))
             {
                 transform.position = SetRing();
+                counter.AddMove();
             }
             else if (mousePos.x > -2.5f && mousePos.x < 2.5f && poleC.CheckSize(this))
             {
                 transform.position = SetRing();
+                counter.AddMove();
             }
             else
             {

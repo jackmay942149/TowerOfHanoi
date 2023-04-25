@@ -571,7 +571,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "The Tower of Hanoi is a mathematical puzzle consisting of three rods and
-    an number of disks. The gola of the puzzle is to move the entire stack from the
+    an number of disks. The goal of the puzzle is to move the entire stack from the
     first rod to the last, obeing the following rules: \n\n1. Only one disk may be
     moved at a time.\r\n2. Each move consists of taking the upper disk from one of
     the stacks and placing it on top of another stack or on an empty rod.\r\n3. No
